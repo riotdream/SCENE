@@ -1,0 +1,33 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>MP3Charts Manager v1.0 Informationen</title>
+</head>
+
+<body>
+<h1>MP3Charts Manager v1.0 TCL</h1>
+<h2>Entwickler</h2>
+<p>Entwickelt wurde des ganze von mir, poci/PPX ;-)<br />
+  Ich m&ouml;chte mich jedoch bei ein paar Leuten aus PPX bedanken, die mir bei meinen &Uuml;berlegungen mit Rat und Tat zur Seite standen.</p>
+<h2>Was ist das?</h2>
+  <p>Zur Zeit ist der MP3Charts Manager ein TCL-Script um die, w&ouml;chentlich erscheinenden, TOP100 Single, TOP40 ODC und TOP20 BC Charts, die von der Gruppe &quot;MiNiSTRY&quot; released werden, zu verwalten. Verwalten hei&szlig;t in diesem Sinne jedoch einfach, die Dateien zu analysieren, Doppelte aufzufinden und diese dementsprechend zu l&ouml;schen und mit der Original Datei zu verkn&uuml;pfen.</p>
+  <h2>Wer braucht sowas?</h2>
+  <p>Nun ja, generell gilt, dass es jeder braucht, der gerne Charts h&ouml;rt und diese auch &uuml;ber l&auml;ngere Zeit behalten m&ouml;chte. Jetzt fragen sich sicherlich viele, wof&uuml;r man dann einen Manager braucht - bislang hat das &quot;sammeln&quot; dieser Charts auch so gut funktioniert. Wenn man sich die Charts allerdings mal ein paar Sekunden lang genauer anschaut, f&auml;llt auf, dass von Woche zu Woche nur sehr wenige Tracks neu einsteigen. Das ist der Punkte wo der MP3Charts Manager einspringt ;-) Mit ihm lassen sich schnell und einfach ein paar Gigabyte an Platz sparen, ohne dabei an Komfort zu verlieren.</p>
+  <p>Um dies zu hinterlegen werde ich nun mal eine simple Milchm&auml;dchen-Rechnung aufstelle:<br />
+    <br />
+    Man stelle sich vor, man habe alle TOP100 Single Charts eines Jahres gesammelt. Das w&auml;ren in etwa 52 * 100, also 5200 MP3 Dateien. In Zeiten von guter Qualit&auml;t und VBR verbraucht eine MP3 Datei, grob gesagt, 5MB auf eurer Festplatte. Bei 5200 MP3 Dateien sind es dann also 26GB f&uuml;r ein Jahr m&auml;&szlig;ig guter Mainstream-Musik. W&uuml;rde man jedoch nur einmal die TOP100 speichern und dann nurnoch die Ver&auml;nderung bzw. Neueinsteiger, dann w&auml;ren wir in etwa bei 100 + 51*10, also 610 MP3 Dateien. Diese w&uuml;rden nur etwa 3GB verbrauchen. Das sind gerade mal 12% von 26GB und passt auch locker sp&auml;ter auf eine DVD! Und genau das macht der MP3Charts Manager.</p>
+  <h2>Was kann er noch?</h2>
+  <p>Neben dem l&ouml;schen von redundanten Liedern, f&uuml;hrt er ein neues Dateiformat bei MP3Charts ein. Die &quot;chartsinfo.xml&quot;, eine auf dem XML-Format basierende Datei, die alle n&ouml;tigen Informationen f&uuml;r den MP3Charts Manager beinhaltet um neue Charts lokal soweit vorzubereiten wie es geht. Bei den TOP100 Charts sind das i.d.R. rund 90 MP3 Dateien, die er aus seiner bestehenden Datenbank schon ins Verzeichnis der neuen Charts kopieren kann. Nun braucht man mit FlashFXP (Strg+D) oder einem anderen FTP-Client nur die fehlenden Dateien herunterzuladen. </p>
+  <h2>Was braucht er?</h2>
+  <ul>
+    <li>tclsqlite3</li>
+    <li>tdom</li>
+    <li>tcl8.4</li>
+  </ul>
+  <h2>Einschr&auml;nkung und Zukunft </h2>
+  <p>Zum jetztigen Zeitpunkt fallen mir spontan zwei Einschr&auml;nkungen ein. So ist diese TCL Version vor allem f&uuml;r Sites interessant, da viele Benutzer sicherlich nicht die n&ouml;tigen Programme und Pakete haben oder unter auf ihrem System installieren k&ouml;nnen. Deshalb ist noch eine Art Windows-Client geplant, der ohne gro&szlig;artige Abh&auml;ngikeiten auskommt. Diese TCL Version ist deshalb vorallem f&uuml;r Sites, die nun eventuell auch Charts archivieren k&ouml;nnen/wollen. Die zweite Einschr&auml;nkung, liegt eher an MiNiSTRY. Man kann es ihnen allerdings nicht &uuml;bel nehmen, dass sie vollst&auml;ndige ID3Tag Informationen in ihren MP3 Dateien speichern. So ist das Feld &quot;Year&quot; immer aktuell f&uuml;r dieses Jahr eingespeichert und ver&auml;ndert dementsprechend die CRC32-Checksumme, auch wenn die Datei ansonsten komplett dem &quot;Duplikat&quot; &auml;hnelt. Eine L&ouml;sung w&auml;re, das &quot;Year&quot;-Feld bei allen Dateien zu l&ouml;schen. Vielleicht wird dieses optional in eine sp&auml;tere Version eingebaut um noch mehr Platz zu sparen.</p>
+  <h2>Technische Details und Ablauf </h2>
+  <p>Der MP3Charts Manager geht alle Verzeichnisse im Chart-Archiv durch und pr&uuml;ft ob diese dem regul&auml;ren Ausdruck &quot;\w+TOP(\d+)_\w+_(\d\d)_(\d\d)_(\d{4})\w*-MiNiSTRY$&quot; entsprechen. Ist dies der Fall, so wird in einer relationalen SQLite3-Datenbank nachgeschaut, ob diese Charts schon archiviert wurden. Ist dies nicht der Fall so werden alle Dateien mit Gr&ouml;&szlig;e, CRC32-Checksumme und Rank gespeichert. Neue Dateien werden zus&auml;tzlich noch einmal mit Gr&ouml;&szlig;e, CRC32-Checksumme, Dateinamen und ChartID gespeichert. Gleichzeitig wird eine XML-Datei mit dem Dateinamen &quot;chartsinfo.xml&quot; erstellt, die alle, f&uuml;r den MP3Charts Manager wichtigen, Informationen nocheinmal gespeichert werden. Diese Datei wird in dem jeweiligen Charts-Verzeichnis gespeichert und sollte auch f&uuml;r jeden zug&auml;nglich sein. Die Datenbank liegt an einem zentralen Ort und sollte nicht f&uuml;r andere zug&auml;nglich sein. Mit dem Unterkommando &quot;cleanup&quot; r&auml;umt der MP3Charts Manager dann alle Charts auf und hard-link't die gel&ouml;schten Duplikate. Das Unterkommando &quot;rebuild&quot; macht dieses R&uuml;ckg&auml;ngig. Dies dauert je nach Gr&ouml;&szlig;e des Archives und Geschwindigkeit des Systems einige Minuten bis Stunde(n).</p>
+</body>
+</html>

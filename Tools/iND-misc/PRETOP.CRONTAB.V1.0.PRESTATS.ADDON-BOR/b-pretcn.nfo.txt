@@ -1,0 +1,72 @@
+          ___ _____________                         _____________ ___
+        __\\//------------//. BLUNTED ON REALiTY! .\\------------\\//__
+     __\\                                                             //__
+     \|     _______                    ______          _____            |/
+_____||_  _\\     |_____      _____  _/    _/_______ //   _/   nr/bor   ||_____
+\       \_|___   _/    //  __\\    \ |    _\       //_   _\ ____ ______/      /
+|       _    /   |:     | /  :    _ \|    \_        _/   \ _\   \\     _      |
+|       //  /    :|_    |/        |\       |        |     \|     \    \\      |
+//__.______//______//________.____| \______/________\_____\\_____\\__________\\
+  _/            /     _   /_      //_ \        \\\__//_\        /_    \ ||___
+ on;    ___   _/      //   /         \|        |      \_        _/     \/   /
+  |     |_/   \        ___/   /\      :        |_      |        |\         /
+  //____|\     \\_______\\   +--\_____|\______:_/     _/________|/        /
+     ||   \______\   /______/                 |______\\         /________:
+     ||                                                                 ||
+     ||                 _  ___                   ___  _                 ||
+     -+---------------\\\--\//-+ SCRiPT iNFOS! +-\\/--///---------------+-
+     ||             +----\---------------------------/----+             ||
+     :|                                                                 |:
+     .|           PRETOP CRONTAB V1.0 PRESTATS ADDON (c) V1.0           |.
+      |                       .. b-pretcn.zip ..                        |
+      |                                                                 |
+      |    01*2.88M KB :......... SiZE   VERSiON ......: 0.1            |
+      |_    04-04-2004 :......... DATE   GENRE ........: OTHERS        _|
+      _/                                                               \_
+      |:                _  ___                   ___  _                :|
+      -+--------------\\\--\//-+  DESCRiPTiON  +-\\/--///--------------+-
+      ||            +----\---------------------------/----+            ||
+      :|                                                               |:
+      .|  This addon will write to your glftpd.log prestats info.      |.
+      .|                                                               |.
+      .|  It is supposed to show the MONTHTOP/WEEKTOP/ DAYTOPS on the  |.
+      .|  end of a day/week/month.                                     |.
+       |_                                                             _|
+       _/                                                             \_
+       |:               _  ___                   ___  _               :|
+       -+-------------\\\--\//-+ iNSTALL NOTES +-\\/--///-------------+|
+       ||           +----\---------------------------/----+           ||
+       :|                                                             |:
+       .|   Edit config.h and adjust the paths to glftpd.log and      |.
+       .|   prestats log.                                             |.
+       .|   Run compile.sh                                            |.
+       .|   cp pretop_cron /glftpd/bin                                |.
+       .|   set your crontabs                                         |.
+       .|                                                             |.
+       .|   Example :                                                 |.
+       .|                                                             |.
+       .|   30 23 * * *     /glftpd/bin/pretop_cron WEEKTOP 5         |.
+       .|   >/dev/null 2>&1 # FOR WEEKTOP                             |.
+       .|   replace WEEKTOP by MONTHTOP / DAYTOP                      |.
+       .|                                                             |.
+       .|   DZSBOT annouce?                                           |.
+       .|                                                             |.
+       .|   Sure, thats what this script is designed for.             |.
+       .|   It will log MONTHTOP/WEEKTOP/DAYTOP to your glftpd.log.   |.
+       .|                                                             |.
+       .|   Example :                                                 |.
+       .|                                                             |.
+       .|   Use : set splitter(CHAR) "²"                              |.
+       .|                                                             |.
+       .|   set msgtypes(DEFAULT)      "... WEEKTOP"                  |.
+       .|   set chanlist(WEEKTOP)      "#chan"                        |.
+       .|   set disable(WEEKTOP)       0                              |.
+       .|   set variables(WEEKTOP)     "%grp1 %count1 %grp2 %count2   |.
+       .|   %grp3 %count3"                                            |.
+       .|   set announce(WEEKTOP)      "\00310THIS WEEK TOP 3         |.
+       .|   AFFiLS ARE: ² \002grp1\002 with \002%count1\002 pres ²    |.
+       .|   \002%grp2\002 with \002%count2\002 pres  ²                |.
+       .|   \002%grp3\002 with \002%count3\002 pres"                  |.
+        )_                                                           _(
+         //_________________________________________________________\\
+

@@ -1,0 +1,24 @@
+PDR proudly presents ...
+
+IMDB.Script0r.v2.0.PHP.TCL.for.EGGDROP-PDR
+
+Date: 01-07-2008
+Name: pdr-is20.zip
+
+Description:
+
+This is just a nice IMDB script for eggdrop (php/tcl).
+Usage: !imdb <movie_name> 
+
+
+Instalation:
+
+1. Unzip both files to /eggdrop/scripts/ 
+
+2. Edit the imdb.tcl, there is easy config in the beginning
+   and put your path to eggdrop
+
+3. add imdb.tcl to your eggdrop configuration
+
+
+Greetings to all tum te tum dum de dum ..

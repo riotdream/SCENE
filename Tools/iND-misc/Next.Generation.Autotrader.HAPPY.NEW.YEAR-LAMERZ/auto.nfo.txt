@@ -1,0 +1,19 @@
+New year, new autotrader and some rellay pissed guys.
+
+This Autotrader is a very special one.
+It's specialized for German Stuff and also English stuff.
+It has a awesome IMDB lookup , also for German Movies.
+Besides this it has a really good TVRage feature and a very useful Dupescript for PAL after NTSC and so on.
+
+IMPORTANT: DO !!!!NOT!!! Change anything in auto_de.mrc , else it won`t work anymore!!
+This is just a Testversion!!
+No IMDB/TVRAGE/DUPE included in this Version and some things disabled/removed!
+In the Fullversion you get IMDB(!also for german movies!)/TVRAGE/DUPE support and some useful Features!
+
+CONTACT me in ICQ 392738569 or eMail : atrader@web.de
+
+DONT ASK FOR HELP! It's pretty easy to understand!
+
+
+PS:
+de... dont trust anyone anymore !!

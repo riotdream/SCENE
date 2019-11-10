@@ -1,0 +1,5 @@
+psxc-lastpre v0.2
+
+This small script will symlink the last pre'd release. How you wish to run
+it is up to you - you can run it from crontab, interactive, from the prescript
+itself. It works both inside and outside glftpd's chroot.

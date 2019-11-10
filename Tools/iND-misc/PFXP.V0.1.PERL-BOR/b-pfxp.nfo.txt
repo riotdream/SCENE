@@ -1,0 +1,185 @@
+
+          _   _____________                         _____________   _
+        __\\//------------//. BLUNTED ON REALiTY! .\\------------\\//__
+     __\\                                                             //__
+     \|     _______                    ______          _____            |/
+_____||_  _\\     |______     _____  _/    _/_______ //   _/   nr/bor   ||_____
+\       \_|___   _/     //  _\\    \ |    _\       //_   _\ ____ ______/      /
+|       _    /   |:      | / :    _ \|    \_        _/   \ _\   \\     _      |
+|       //  /    :|_     |/       |\       |        |     \|     \    \\     _|
+//__.______//______//________.____| \______/________\_____\\_____\\_________\\
+  _/            /     _   /_      //_ \        \\\__//_\        /_    \ ||___
+ on;    ___   _/      //   /         \|        |      \_        _/     \/   /
+  |     |_/   \        ___/   /\      :        |_      |        |\         /
+  //____|\     \\_______\\   +--\_____|\______:_/     _/________|/        /
+     ||   \______\   /______/                 |______\\         /________:
+     ||                                                                 ||
+     ||                 _  ___                   ___  _                 ||
+     -+---------------\\\--\//-+ SCRiPT iNFOS! +-\\/--///---------------+-
+     ||             +----\---------------------------/----+             ||
+     :|                                                                 |:
+     .|                         BOR-PFXP 0.1                            |.
+      |                       .. b-pfxp.zip ..                          |
+      |                                                                 |
+      |          68 KB :......... SiZE   VERSiON ......: 0.1            |
+      |_   29 mar. 2k4 :......... DATE   GENRE ........: perl          _|
+      _/                                                               \_
+      |:                _  ___                   ___  _                :|
+      -+--------------\\\--\//-+  DESCRiPTiON  +-\\/--///--------------+-
+      ||            +----\---------------------------/----+            ||
+      :|                                                               |:
+      .|          bor-pfxp is a spreadbot/prebot for mp3 teams.        |.
+       |_                                                             _|
+       _/                                                             \_
+       |:               _  ___                   ___  _               :|
+       -+-------------\\\--\//-+ iNSTALL NOTES +-\\/--///-------------+|
+       ||           +----\---------------------------/----+           ||
+       :|                                                             |:
+       .|   PFXP 0.1                                                  |.
+       .|                                                             |.
+       .|   oke there are a few required perl modules :               |.
+       .|   Net::FTP                                                  |.
+       .|   POE                                                       |.
+       .|   POE::Component::IRC                                       |.
+       .|   Term::ANSIColor                                           |.
+       .|   Config::Simple version 3.10                               |.
+       .|                                                             |.
+       .|   installing modules is beyond the scope of this document   |.
+       .|   but in most cases a 'perl -MCPAN -e 'install module''     |.
+       .|   command should be enough. read http://search.cpan.org     |.
+       .|   for more docs.                                            |.
+       .|                                                             |.
+       .|   note : Config::Simple requires version 3.10 because       |.
+       .|   its author made some API changes in newest versions       |.
+       .|   which would break some pfxp code. you cand find it at     |.
+       .|   http://search.cpan.org/CPAN/authors/id/S/SH/ \            |.
+       .|   SHERZODR/Config-Simple-3.10.tar.gz                        |.
+       .|   please read the README to install it properly             |.
+       .|                                                             |.
+       .|   oke now back to config :                                  |.
+       .|                                                             |.
+       .|   1- edit bot.ini :                                         |.
+       .|   # for sites                                               |.
+       .|   dump = your dump name. must be a site in sites.ini        |.
+       .|   debug_ftp = if set to 1, will show all ftpd raw messages  |.
+       .|   timeout = timeout in seconds for ftp operations           |.
+       .|   autoconnect = if set to 1, connect all your sites at boot |.
+       .|   maxfail = max disconnect failures per site                |.
+       .|   logfile = file to log zipscript infos                     |.
+       .|                                                             |.
+       .|   # for irc                                                 |.
+       .|   debug_irc = if set to 1, will show all irc raw messages   |.
+       .|   channel = your irc channel                                |.
+       .|   key = your irc channel key                                |.
+       .|   nick = your bot nick                                      |.
+       .|   altnick = your bot alternative nick                       |.
+       .|   supermaster = irc nick to send messages back              |.
+       .|   masters = nicks of people allowed to msg your bot         |.
+       .|   flood = if set to 1 will bypass all flood protections     |.
+       .|   set to 0 unless you use private ircd.                     |.
+       .|   servers = list of irc servers to connect to               |.
+       .|   ex: servers=irc.efnet.pl,irc.foo.bar,irc.warez.org        |.
+       .|                                                             |.
+       .|   # if your sites require ssl/tls                           |.
+       .|   ssl_host = your tlswrap host (in most cases localhost)    |.
+       .|   ssl_port = your tlswrap port                              |.
+       .|   # if your ircd requires ssl (linknet, private ircd)       |.
+       .|   stunnel_host = your stunnel host (in most cases localhost)|.
+       .|   stunnel_port = your stunnel port                          |.
+       .|   please read both tlswrap and stunnel docs.                |.
+       .|                                                             |.
+       .|                                                             |.
+       .|   2- edit sites.ini :                                       |.
+       .|   sample site config :                                      |.
+       .|   [site]                                                    |.
+       .|   bnc0=1.2.3.4:666                                          |.
+       .|   bnc1=some.other.bnc:123                                   |.
+       .|   bnc2=another.host:456                                     |.
+       .|   login=your_login                                          |.
+       .|   pwd=your_password                                         |.
+       .|   dtoday=your_predir                                        |.
+       .|   up= if set to 1, site will be connected at boot           |.
+       .|   passive= if set to 1, passive mode will be *DISABLED*     |.
+       .|   ssl= if set to 1, ssl will be enabled using tlswrap       |.
+       .|   spread= if set, will fxp to this site once completed      |.
+       .|   pre= your pre command syntax                              |.
+       .|                                                             |.
+       .|   notes for spread param :                                  |.
+       .|   ----------------------                                    |.
+       .|                                                             |.
+       .|   this param is used to make chains between sites, to fxp   |.
+       .|   all sites in one command (in most cases)                  |.
+       .|   the spreads are being done in parallel, so you don't      |.
+       .|   waste time.                                               |.
+       .|   example :                                                 |.
+       .|   [foo] has spread=xyz, [xyz] has spread=bar, dump is [dump]|.
+       .|   command sent : fxp pretest-2004-grp dump foo              |.
+       .|   this will fxp pretest-2004-grp from dump to foo           |.
+       .|   once foo will be complete, this will fxp pretest-2004-grp |.
+       .|   from foo to xyz                                           |.
+       .|   once xyz will be complete, this will fxp pretest-2004-grp |. 
+       .|   from xyz to bar                                           |.
+       .|                                                             |.
+       .|   pfxp will check for bad chains :                          |. 
+       .|   - if a site can't be connected and is a source spread     |.
+       .|   this will be replaced by your dump (in this case if       |.
+       .|   xyz is down, it will do dump>bar instead)                 |.
+       .|   - if a site is being chained from 2 or more sites only    |.
+       .|   one chain will be kept left, others will be removed       |.
+       .|   at run-time.                                              |.
+       .|                                                             |.
+       .|   notes for pre param :                                     |.
+       .|   -------------------                                       |.
+       .|                                                             |.
+       .|   %s is the release name cookie                             |.
+       .|                                                             |.
+       .|   examples :                                                |.
+       .|   pre=PRE %s                                                |.
+       .|   pre=PRE %s section                                        |.
+       .|   pre=PREMP3 %s                                             |.
+       .|                                                             |.
+       .|                                                             |.
+       .|   3- run pfxp :                                             |.
+       .|   -----------                                               |.
+       .|                                                             |.
+       .|   chmod a+x pfxp (for 1st run)                              |.
+       .|   ./pfxp                                                    |.
+       .|                                                             |.
+       .|   pfxp will connect an irc server and join your channel.    |.
+       .|   pfxp will then connect all your sites, this may           |.
+       .|   take some time.                                           |.
+       .|   once sites pool is being done, you can send private       |.
+       .|   messages to the bot, try /msg bot help.                   |.
+       .|                                                             |.
+       .|   example for preing a release :                            |.
+       .|   - make sure your release is on your dump predir, this is  |.
+       .|   not required but it's better because :                    |.
+       .|   1.if you let rippers upload their releases directly into  |.
+       .|   sites it's not secure because their real ip is shown      |.
+       .|   here, sometimes their real nick in pre ownership too.     |.
+       .|   2.if a chain element fails, it reverts to using your dump.|.
+       .|   - make sure you have a correct chain set. this can require|.
+       .|   some tests using a classic fxp client                     |.
+       .|   to see which sites are fast from/to each other. for ex.   |.
+       .|   don't fxp from bbb to .kr ;)                              |.
+       .|   - /msg bot fxp release dump your_first_target             |.
+       .|   - this will fxp from dump to the target, and if correct   |.
+       .|   spread is set from target, the chain will start all       |.
+       .|   other xfers.                                              |.
+       .|   - check the zipscript completion reports on shell log file|.
+       .|   if you don't want to pre inc :)                           |.
+       .|   - /msg bot pre release ALL                                |.
+       .|   - this will send the pre command to all connected sites.  |.
+       .|   - check the prescript reports if you think a problem      |.
+       .|   might have happened.                                      |.
+       .|   - you can quit pfxp using ctrl+c or /msg bot quit         |.
+       .|                                                             |.
+       .|                                                             |.
+       .|   enjoy, and don't forget to dupecheck ! :)                 |.
+       .|                                                             |.
+       .|                                                             |.
+       .|                                                             |.
+       .|   Team B.O.R 2004                                           |.
+        )_                                                           _(
+         //_________________________________________________________\\
+         
