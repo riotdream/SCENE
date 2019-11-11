@@ -1,0 +1,46 @@
+лллллллллллллллллллллллллллллллллллллллллллллллллллллллллллл
+лл                                                        лл
+лл                MrCode present                          лл
+лл     Allocine.Vs.Imdb.V3.2.TCLFiX.EGGDROP.TCL-MrCode    лл
+лл                                                        лл
+лллллллллллллллллллллллллллллллллллллллллллллллллллллллллллл
+лл                                                        лл
+лл   Release Name: avi-v3.2f                               лл
+лл   Release Date: 12/17/2010                             лл
+лл   Store Date  : 2010                                   лл
+лл   Rars        : 1 zip                                  лл
+лл                                                        лл
+лллллллллллллллллллллллллллллллллллллллллллллллллллллллллллл
+лл                                                        лл
+лл                         NOTES:                         лл
+лл                                                        лл
+лл   This script display allocine and imdb informations   лл
+лл                                                        лл
+лл   The advantage of nightly devs, I sucks! :/           лл
+лл                                                        лл
+лл                                                        лл
+лл                        ENJOY ;)                        лл
+лл                                                        лл
+лллллллллллллллллллллллллллллллллллллллллллллллллллллллллллл
+лл                                                        лл
+лл                        INSTALL:                        лл
+лл                                                        лл
+лл   1) unrar in /scripts folder                          лл
+лл   2) Edit avi-v3.2.tcl file                            лл
+лл   3) Open eggdrop.conf file                            лл
+лл   4) Add if necessary (at the beginning):              лл
+лл       loadmodule blowfish                              лл
+лл   5) Add at the end:                                   лл
+лл       source scripts/http.tcl                          лл
+лл       source scripts/avi-v3.2.tcl                      лл
+лл   6) Rehash eggdrop                                    лл
+лл                                                        лл
+лллллллллллллллллллллллллллллллллллллллллллллллллллллллллллл
+лл                                                        лл
+лл                        GREETS:                         лл
+лл                                                        лл
+лл         PERPLEX, imdb, allocine and my gayteam         лл
+лл                                                        лл
+лл     to nukers... you like me lol, I like you guys!     лл
+лл                                                        лл
+лллллллллллллллллллллллллллллллллллллллллллллллллллллллллллл

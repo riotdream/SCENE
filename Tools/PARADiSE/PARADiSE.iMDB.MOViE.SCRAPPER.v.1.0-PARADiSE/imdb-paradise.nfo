@@ -1,0 +1,10 @@
+Release...: PARADiSE.iMDB.MOViE.SCRAPPER.v.1.0-PARADiSE
+Date......: 15.12.2012
+Rars......: 1x RAR
+Info......: Getting movie info From imdb (not tv).
+            scan a movie directory and grab info or create IMDB info in release.
+
+Note......: votes and score may change means u will have to delete the imdb folder 
+	        in release if re-scan dir.
+	  
+ChangeLog.: None atm

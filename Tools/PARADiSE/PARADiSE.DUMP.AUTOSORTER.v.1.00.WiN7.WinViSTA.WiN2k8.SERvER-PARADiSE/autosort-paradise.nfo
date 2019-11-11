@@ -1,0 +1,29 @@
+                                                      @@                    
+	@@@@@@@@      @@    @@@@@@@@        @@    @@@@@@@@          @@@@@@  @@@@@@@@
+	  @@  @@      @@      @@  @@        @@      @@    @@  @@    @@        @@    
+	  @@@@@@    @@  @@    @@@@        @@  @@    @@    @@  @@      @@      @@@@  
+	  @@        @@@@@@    @@  @@      @@@@@@    @@    @@  @@        @@    @@    
+	@@@@@@    @@    @@@@@@@@@@  @@  @@    @@@@@@@@@@@@    @@@@  @@@@@@  @@@@@@@@
+
+----------------------------------------------------------------------------------------------
+
+Release     :   PARADiSE.DUMP.AUTOSORTER.v.1.00.WiN7.WinViSTA.WiN2k8.SERvER-PARADiSE
+Date        :   08.06.2012
+Platform    :   Windows 7,Windows Vista, Win Server2k8
+Size        :   1 RAR x 454kb
+Language    :   English
+
+Description :   Sort inncomming folder, and sort the releases by date, by creating
+                Virtual folders from orginal destination,
+				Nuke check releases and make nuke reson folder inside nuked release.
+				Check for unpacked or crap releases/files.
+				Sort Mp3 by ID3 tag!
+				
+Notes       :   Enable Administrator acces for the program
+                Turn off user account settings (Distable)
+				Disk witch the releases are going to be sorted on needs to be NTFS formated.
+				Copy rared content to own folder and run: autoSort.exe. 
+				
+				pS:  Dont spam ORLYDB with nuke checking, so set big interval on check!
+				
+----------------------------------------------------------------------------------------------

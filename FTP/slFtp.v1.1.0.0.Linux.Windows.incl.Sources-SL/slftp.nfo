@@ -1,0 +1,66 @@
+                                 slFtp v1.1.0.0
+-------------------------------------------------------------------------------
+
+slFtp is an open-source, multithreaded FTP client with native Linux and Windows
+support, designed for the "scene".
+
+Features:
+- FTP client, including sitemanager, SSL/TLS support, SSLFXP 
+  (turned on automaticly if needed), per site IO/connect timeouts
+- XDUPE support
+- "Newdir race", multi dir support
+- Highly configurable skiplists
+- Dynamically rebuild transfer chains based on allowed/complete status of sites
+- Condition based rule sets for sites/sections with ~40 conditions, 
+  including MP3 genre, year, language, number of disks, rlsname masks, etc.
+- Full IRC support (with multiple networks, chans, SSL, blowfish)
+- Highly configurable precatcher
+- Genre support for MP3 (including IRC based and dirlist based)
+- Genre support for MDVDR/MV (by fetching and parsing nfo file)
+- Fake checking with many builtin rules
+- Auto based on IRC/dirlisting
+- Prebot functionality, including LAME/MPEG header checks, batch support,
+  lame checking/spreading/pre is done by one single command
+  (available on group request only)
+- Affil/user lists, displaying free slots  
+- Admin backends (currently IRC is implemented only)
+- SOCKS5 support (with anonymous and username/password based authentication)
+- Ident server support on Windows
+
+Features coming:
+- Support for limiting number of uploads based on sfv
+- TVRage support
+- iMDB support
+- Rebuild routing table based on latest speed stats
+- Scanning sections / auto request filling
+- Some click frontend on Windows maybe
+- (Proper) documentation, help is needed as I am lazy
+- Kill all humans
+
+Join #slftp@LiNKNET
+
+                                    Licence
+-------------------------------------------------------------------------------
+You can freely use/mod slFtp, but keep the source open.
+
+
+                                 Installation
+-------------------------------------------------------------------------------
+1. Edit at least [irc] section of slftp.ini
+2. Start the binary (./slftp or slftp.exe)
+3. Bot should join the specified channel. Learn !help
+4. Add sites (!help addsite)
+5. Setup section dirs (!help setdir)
+6. Setup routes (!help setspeed inroutes outroutes)
+7. Add networks, chans (!help ircaddnet, ircsetblowkey, ircsetchankey)
+8. Add precatcher rules (!help catchadd)
+9. Add site rules (!help ruleadd)
+10.Turn on auto !auto 1
+
+                                   Changelog
+-------------------------------------------------------------------------------
+slFtp v1.1.0.0   - rules/auto/multiple irc networks/etc added.
+slFtp v1.0.0.27  - originally written for an MP3 group as pretool.
+pftprush/slpre   - this is the original version I started to work on ~3 years 
+ago. It is written in C, but was too buggy, segfaulted a lot, so I decided to 
+stop.

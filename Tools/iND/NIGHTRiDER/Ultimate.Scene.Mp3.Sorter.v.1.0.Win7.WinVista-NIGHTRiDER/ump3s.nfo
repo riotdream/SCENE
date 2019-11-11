@@ -1,0 +1,64 @@
+Release name  :		Ultimate.Scene.Mp3.Sorter.v.1.0.Win7.WinVista-NIGHTRiDER
+Date         :      16.02.2012
+OS           :		Windows Vista/7
+Notes        :      Sort your scene mp3 collection!
+						-Fast
+						-Easy
+						-Symbolic Sorting!
+Install      :      Extract contents, and run EXE! :)
+REQ			 :      .NET
+
+
+					
+					
+Fast tour through the application, and its futures!:
+
+1:  Sort By letters,
+	Not very much to say, it generates an Alphabetical order of your mp3.
+	Move the folder or create symbolic link!
+					
+2:  No sort all to one folder, use this if u have mp3 releases spread out in different locations in a dir.
+	Move the folder or create symbolic link!
+
+3:  Sort By type: WEB,SAT,DAB,etc
+	Move the folder or create symbolic link!
+	
+4:  Sort By release group!
+	Move the folder or create symbolic link!
+	
+5:  Sort by Genre, this will only work if the mp3 release has id3 tag present!
+	Work on 95%.
+	Move the folder or create symbolic link!
+
+6:  Sort after year!
+	Work on releases tagged with year,90% of all tested releases.
+	Move the folder or create symbolic link!
+
+7: Find Foreign, -DK,-SE etc.
+	Move the folder or create symbolic link!
+	
+8:  Sort By artist!
+	This will only work if the mp3 release has id3 tag present!
+	Move the folder or create symbolic link!
+	
+FAQ:
+	Move the folder?   								Yes, app moves the folder from its original place, to new folder where it's sorted!
+	Symbolic Link?    								Makes a Shortcut to the release! Means that u can sort ur collections in every way you want
+														year,artist,type etc.. Without moving the release itselvs.
+	Will there be more functions and improvements?   Yes, gimme some requests too
+	Will it work with flac?							Yes and No, Artist and Genre needs the ID3 tag in MP3. Will come in v.2.0
+
+Additional Note!
+
+	Have tested this on folders up to 1tb of size, and that's about 14k releases.
+	Should run smoothly at least on win7.
+
+	Have tested it on about 10tb of scene mp3 releases.
+	It's not 100% perfect, but does the job if ur lazy like me, and wana sort ur collections! :D
+
+	Symbolic links will not work under OS under XP, use it on Vista and Win7!!
+	You must use this on a NTFS disc! Or SYMBLOIC link won't work!
+	
+	User controll in windows, shut it off!  OR run as ADMINISTRATOR!
+	
+	

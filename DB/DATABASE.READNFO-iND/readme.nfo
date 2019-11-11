@@ -1,0 +1,35 @@
+mysql-pre-database with over 2,6mil pres. hf.
+
+
+some stats: 
+
+- 1980-01-01-2002-12-31 336.188 pres
+- DEVIANCE: 2.369 pres ... first: GRIM.FANDANGO-DEViANCE
+- 1980-01-01-2007-12-31 ~2.680.000 rls with ~370mb
+- ~1.350.000 rls have files and size info
+...
+
+last pre: Damien_Rice_and_David_Gray-Que_Sera_Sera_(at_Live_Earth_07-07-07)-XviD-2007-PmV
+
+---------------------------------------------------------------------------------------
+install: 
+
+bzip2 -d predb.bz2
+vi pred.bz2 (look inside)
+mysql --user=r00t --pass=l33tpW --host=localhost l33t < predb.sql
+feel free to join with your nice bot a cool colocated-p2p-site with some nice affils :D
+---------------------------------------------------------------------------------------
+backup your nice db:
+mysqldump --user=r00t --password=l33tpW --database l33t --table predb >predb.sql && bzip2 predb.sql
+---------------------------------------------------------------------------------------
+
+botowners: feel free to merge. and fuckoff (use the phpscript -> edit -> shell: php move_table.php)
+
+others: get your 'own' prescript on http://pastebin.ca/search.php?q=prebot,
+http://pastebin.ca/search.php?q=addpre or use the example one.
+
+
+enjoy the l33t-scene leaked db.
+
+
+ps: is the prescene good enough for you guys?
