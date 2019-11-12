@@ -14,11 +14,11 @@ All this material is coming from many sources I've credited the authors and the 
 
 This is a repository made by "scene" tools found on those web sites:
 
-[ReScene - Scene Tools www](http://rescene.wikidot.com/scene-tools)
-[Ironic Logic www](http://ironiclogic.com)
-[Algorhythm - www](https://algorhythm.com
-[Algorhythm - www](https://algorhythm.cc/perplex.html)
-[wuserman GitHub page](https://github.com/wuseman/GLFTPD)
+- http://rescene.wikidot.com/scene-tools - ReScene - Scene Tools www
+- http://ironiclogic.com - Ironic Logic www
+- https://algorhythm.com - Algorhythm - www
+- https://algorhythm.cc/perplex.html - Algorhythm - www - PPX mirror
+- https://github.com/wuseman/GLFTPD - wuserman GitHub page
 
 Open an issue or write me to complete or fix this "project".
 
